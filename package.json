@@ -1,0 +1,34 @@
+{
+  "name": "albion",
+  "version": "0.1.0",
+  "description": "Albion Online API module",
+  "main": "./lib/index.js",
+  "types": "./typings/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "typings",
+    "example.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidemis/albion.git"
+  },
+  "keywords": [
+    "albion",
+    "api",
+    "albion",
+    "online"
+  ],
+  "author": "kidemis",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kidemis/albion/issues"
+  },
+  "homepage": "https://github.com/kidemis/albion#readme"
+}
