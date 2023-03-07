@@ -1,6 +1,7 @@
 # Albion API
 NodeJS module to interact with the [Albion Online API](https://www.tools4albion.com/api_info.php).<br>
-Currenly limited in scoope, aiming at nearly full (known, see [this](https://www.tools4albion.com/api_info.php)) coverage.<br>
+Currenly limited in scope, aiming at nearly full (known, see [this](https://www.tools4albion.com/api_info.php)) coverage.<br>
+This project is **not recomended for production** in this stage of developement, a lot of breaking-changes are expected in the following versions.<br>
 *Note: **Not affiliated with neither Albion Online nor Sandbox Interactive.***
 ## Instalation
 ```sh
