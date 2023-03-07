@@ -28,7 +28,7 @@ export class PlayerAvatar {
 }
 
 export declare function getPlayerByName (name: string): Promise<Player | null>;
-export declare function getPlayerById (name: string): Promise<Player | null>;
+export declare function getPlayerById (id: string): Promise<Player | null>;
 export declare function getGuildByName (name: string): Promise<Guild | null>;
-export declare function getGuildById (name: string): Promise<Guild | null>;
-export declare function getAllianceById (name: string): Promise<Alliance | null>;
+export declare function getGuildById (id: string): Promise<Guild | null>;
+export declare function getAllianceById (id: string): Promise<Alliance | null>;
