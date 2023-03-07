@@ -3,7 +3,12 @@ export class Alliance {
     public id: string;
     public tag: string;
     public memberCount: number;
+    public guildCount: number;
     public founded: Date;
+    public founderId: string;
+    public guildIds: string[];
+    public getFounder(): Promise<Player | null>;
+    public getGuilds(max: number): Promise<Guild[]>;
 }
 
 export class Guild {
@@ -12,6 +17,8 @@ export class Guild {
     public alliance: Alliance | null;
     public memberCount: number;
     public founded: Date;
+    public founderId: string;
+    public getFounder(): Promise<Player | null>;
 }
 
 export class Player {
