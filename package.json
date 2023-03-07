@@ -1,7 +1,7 @@
 {
   "name": "albion",
-  "version": "0.1.0",
-  "description": "Node.JS module to interact with the Albion Online API ",
+  "version": "0.1.1",
+  "description": "NodeJS module to interact with the Albion Online API ",
   "main": "./lib/index.js",
   "types": "./typings/index.d.ts",
   "directories": {
