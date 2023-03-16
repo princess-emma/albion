@@ -36,11 +36,30 @@ export class Player {
     public guild: Guild | null;
     public alliance: Alliance | null;
     public avatar: PlayerAvatar;
+    public fame: Fame;
 }
 
 export interface PlayerAvatar {
     public code: string;
     public ringCode: string;
+}
+
+export class Fame {
+    public pve: FameTypeExtended;
+    public gathering: { fiber: FameType, hide: FameType, ore: FameType, rock: FameType, wood: FameType, all: FameType };
+    public crafting: FameType;
+    public fishing: FameType;
+    public farming: FameType;
+}
+export class FameType {
+    public total: number;
+    public royal: number;
+    public outlands: number;
+    public avalon: number;
+}
+export class FameTypeExtended extends FameType {
+    public hellgate: number;
+    public corrupted: number
 }
 
 export interface CacheItem<T> {
