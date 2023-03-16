@@ -1,4 +1,6 @@
 export class Alliance {
+    public static cache: Cache<Alliance>;
+    public static maxLife: number;
     public name: string;
     public id: string;
     public tag: string;
@@ -12,6 +14,8 @@ export class Alliance {
 }
 
 export class Guild {
+    public static cache: Cache<Guild>;
+    public static maxLife: number;
     public name: string;
     public id: string;
     public alliance: Alliance | null;
@@ -22,6 +26,8 @@ export class Guild {
 }
 
 export class Player {
+    public static cache: Cache<Player>;
+    public static maxLife: number;
     public name: string;
     public id: string;
     public guild: Guild | null;
@@ -33,6 +39,12 @@ export class PlayerAvatar {
     public code: string;
     public ringCode: string;
 }
+
+export interface CacheItem<T> {
+    content: T;
+    timestamp: number
+}
+export type Cache<T> = Map<string, CacheItem<T>>;
 
 export declare function getPlayerByName (name: string): Promise<Player | null>;
 export declare function getPlayerById (id: string): Promise<Player | null>;
