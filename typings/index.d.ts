@@ -1,6 +1,7 @@
 export class Alliance {
     public static cache: Cache<Alliance>;
     public static maxLife: number;
+    constructor(name: string, id: string, tag: string, memberCount: number, founded: number, founderId: string, guildIds: string[]);
     public name: string;
     public id: string;
     public tag: string;
@@ -16,6 +17,7 @@ export class Alliance {
 export class Guild {
     public static cache: Cache<Guild>;
     public static maxLife: number;
+    constructor(name: string, id: string, alliance: Alliance | null, memberCount: number, founded: number, founderId: string);
     public name: string;
     public id: string;
     public alliance: Alliance | null;
@@ -28,6 +30,7 @@ export class Guild {
 export class Player {
     public static cache: Cache<Player>;
     public static maxLife: number;
+    constructor(name: string, id: string, guild: Guild | null, avatar: PlayerAvatar);
     public name: string;
     public id: string;
     public guild: Guild | null;
@@ -35,7 +38,7 @@ export class Player {
     public avatar: PlayerAvatar;
 }
 
-export class PlayerAvatar {
+export interface PlayerAvatar {
     public code: string;
     public ringCode: string;
 }
