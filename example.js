@@ -1,4 +1,4 @@
-const AlbionAPI = require('.');
+const AlbionAPI = require('albion');
 
 const playerName = 'aurora60';
 

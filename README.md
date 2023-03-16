@@ -9,7 +9,7 @@ npm install albion
 ```
 ## Example
 ```js
-const AlbionAPI = require('.');
+const AlbionAPI = require('albion');
 
 const playerName = 'aurora60';
 
