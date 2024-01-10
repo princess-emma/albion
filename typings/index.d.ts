@@ -60,6 +60,7 @@ export class FameType {
 export class FameTypeExtended extends FameType {
     public hellgate: number;
     public corrupted: number
+    public mists: number
 }
 
 export interface CacheItem<T> {
