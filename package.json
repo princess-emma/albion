@@ -25,10 +25,10 @@
     "albion",
     "online"
   ],
-  "author": "Alladeila",
+  "author": "Emslay",
   "license": "LGPL-2.1-or-later",
   "bugs": {
-    "url": "https://github.com/Alladeila/albion/issues"
+    "url": "https://github.com/emslay/albion/issues"
   },
-  "homepage": "https://github.com/Alladeila/albion#readme"
+  "homepage": "https://github.com/emslay/albion#readme"
 }
